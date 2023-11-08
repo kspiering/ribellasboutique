@@ -1,0 +1,82 @@
+/* Small Reset */
+*::before, *::after, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Mobile */
+
+.h1 {
+    display: flex;
+    justify-content: center; 
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 20px; 
+    margin-bottom: 1rem;
+    
+
+}
+h2 {
+    font-weight: bolder;
+    font-size: 19px;
+    padding-top: 10px;
+     margin-left: 8%;
+    margin-right: 8%;
+}
+
+p {
+    font-size: 14px; 
+    word-spacing: 2px;
+    margin-left: 8%;
+    margin-right: 8%;
+    gap: 8px;
+    margin-bottom: 0.5rem;
+}
+address {
+    font-size: 14px; 
+    word-spacing: 2px;
+    margin-left: 8%;
+}
+
+/* Trends Desktop */
+@media (min-width: 700px) {
+
+.h1 {
+        display: flex;
+        justify-content: center; 
+    }
+    
+h1 {
+        font-weight: bolder;
+        font-size: 35px;
+        margin-bottom: 2rem;
+    } 
+h2 {
+        font-weight: bolder;
+        font-size: 20px;
+        margin-left: 8%;
+        margin-top: 1rem;
+        margin-bottom: 1rem; 
+    }
+
+p {
+    font-size: 22px; 
+    word-spacing: 2px;
+    margin-left: 8%;
+    margin-right: 8%;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+address {
+    font-size: 22px; 
+    word-spacing: 2px;
+    margin-left: 8%;
+}
+}

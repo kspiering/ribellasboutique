@@ -1,0 +1,129 @@
+/* Small Reset */
+*::before, *::after, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile */
+
+@media (min-width: 320px) {
+
+    p {
+        font-family: sans-serif;
+        font-size: larger;
+        font-size: 14px;
+        margin-bottom: 2.5rem;
+    }
+    .titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h1 {
+        font-weight: bolder;
+        font-size: 20px; 
+        margin-bottom: 2rem;
+    }
+    
+    
+    .album {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .album img {
+        width: 296px;
+        height: auto;
+        margin-bottom: 10px;
+     }
+    
+    .add p {
+        text-align: center;
+    }
+    
+    .add span {
+        font-size: 200px;
+        color: rgb(215, 199, 186);
+     }
+    
+        .album-winter {
+        text-align: center;
+        }
+        .album-spring {
+        text-align: center;
+        }
+        .album-summer {
+        text-align: center;
+        }
+        .album-fall {
+        text-align: center;
+        }
+    
+}
+
+/* Desktop */
+
+@media (min-width: 850px) {
+
+    p {
+    font-family: sans-serif;
+    font-size: larger;
+    font-size: 22px;
+}
+
+    .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    h1 {
+    font-weight: bolder;
+    font-size: 35px; 
+    margin-bottom: 3rem;
+    }
+
+    .album {
+        display: grid;
+        gap: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .album img {
+        width: 396px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .add {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add p {
+       text-align: center;
+    }
+    .add span {
+       font-size: 300px;
+       color: rgb(215, 199, 186);
+  
+    }
+
+    .album-winter {
+    text-align: center;
+    }
+    .album-spring {
+    text-align: center;
+    }
+    .album-summer {
+    text-align: center;
+    }
+    .album-fall {
+    text-align: center;
+    } 
+}

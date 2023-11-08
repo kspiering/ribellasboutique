@@ -1,0 +1,172 @@
+/* Small Reset */
+*::before, *::after, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Mobile */
+/* Trends */
+
+.h1 {
+    display: flex;
+    justify-content: center; 
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 20px; 
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+}
+
+.images img {
+    width: 230px;
+    height: auto; 
+}
+
+.image_top {
+   display: flex;
+   justify-content: center;
+  margin-top: 40px;
+}
+
+.image_bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.image_left {
+    display: flex;
+    justify-content: center;
+     padding-top: 40px;
+    
+}
+
+.image_right {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+} 
+
+/* Trends Tablet */
+@media (min-width: 650px) {
+    
+    .h1 {
+        display: flex;
+        justify-content: center; 
+    }
+    
+    h1 {
+        font-weight: bolder;
+        font-size: 35px; 
+    }
+    
+    .images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    .images img {
+        width: 420px;
+        height: auto; 
+    }
+    
+    
+ }
+
+/* Trends Desktop */
+@media (min-width: 1362px) {
+
+.h1 {
+    display: flex;
+    justify-content: center; 
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 35px; 
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+}
+
+.images img {
+    width: 420px;
+    height: auto; 
+}
+
+.image_top {
+   display: flex;
+   justify-content: center;
+   padding-top: 60px;
+}
+
+.image_bottom {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.image_left {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 40px;
+    margin-top: -900px;
+}
+
+.image_right {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+    margin-top: -600px;
+    margin-bottom: 21rem;
+} 
+}
+
+@media (min-width: 1500px) {
+    .images {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .images img {
+        width: 420px;
+        height: auto; 
+    }
+    
+    .image_top {
+       display: flex;
+       justify-content: center;
+       padding-top: 60px;
+    }
+    
+    .image_bottom {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+    
+    .image_left {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 100px;
+        margin-top: -900px;
+    }
+    
+    .image_right {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 100px;
+        margin-top: -600px;
+    } 
+}

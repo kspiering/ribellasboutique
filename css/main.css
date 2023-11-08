@@ -1,0 +1,208 @@
+/* Small Reset */
+*::before, *::after, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Mobile */
+
+body {
+    background: rgb(215, 199, 186, 0.2);
+    font-family: sans-serif;
+    width: 100%;
+}
+a {
+    text-decoration: none; 
+    color: black;
+}
+
+ 
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center; 
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.logo img {
+    width: auto;
+    height: 60px;
+}
+
+i { 
+    position: absolute;
+    right: 8%;
+    top: 68px; 
+    font-size: 20px; 
+    color: black;
+}
+
+.nav-header ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none; 
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+
+
+/* Footer */
+.footer {
+    width: 90vw;
+    position: relative;
+}
+
+hr {
+    width: 90%;
+    border: solid 1px black; 
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.top-line {
+   display: flex;
+   justify-content: center;
+   margin-top: 2rem;
+}
+
+.bottom-line {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-footer ul {
+    list-style: none;
+    font-size: 14px; 
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-right: 8%;
+} 
+.logo-small {
+    display: flex;
+    justify-content: flex-end;
+}
+.logo-small img {
+    height: auto;
+    width: 40px;
+    margin-bottom: -35px;
+}
+small {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 8%;
+}
+
+/* Desktop */
+@media (min-width: 700px) { 
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center; 
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.logo img {
+    width: auto;
+    height: 100px;
+}
+
+i { 
+    position: absolute;
+    right: 8%;
+    top: 110px; 
+    font-size: 40px; 
+}
+
+.nav-header ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none; 
+    font-size: 25px;
+    margin-bottom: 4rem;
+}
+
+
+/* Footer Mobile */
+.footer {
+    width: 90vw;
+    position: relative;
+}
+
+hr {
+    width: 90%;
+    border: solid 1.25px black; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.top-line {
+   display: flex;
+   justify-content: center;
+   margin-top: 4rem;
+}
+
+.bottom-line {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-footer ul {
+    list-style: none;
+    font-size: 25px; 
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-right: 8%;
+} 
+.logo-small {
+    display: flex;
+    justify-content: flex-end;
+}
+.logo-small img {
+    height: auto;
+    width: 60px;
+    margin-bottom: -50px;
+}
+small {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 8%;
+}
+
+}

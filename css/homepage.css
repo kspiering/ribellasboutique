@@ -1,0 +1,115 @@
+/* Small Reset */
+*::before, *::after, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+/* Mobile */
+
+/* Hero Section */
+
+.hero img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+/* Introduction Text */
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;
+    font-size: 14px; 
+    word-spacing: 2px;
+}
+
+.text_bold {
+    font-weight: bold; 
+    display: flex;
+    justify-content: center; 
+    padding-top: 15px;
+    padding-bottom: 5px; 
+}
+
+.text_bold_two {
+    font-weight: bold; 
+    display: flex;
+    justify-content: center; 
+    padding-top: 5px;
+    padding-bottom: 15px; 
+}
+
+.text_bold_three {
+    font-weight: bold; 
+    display: flex;
+    justify-content: center; 
+    padding: 15px;
+}
+
+.text_normal {
+    display: flex;
+    justify-content: center; 
+    padding: 15px; }
+
+/* Desktop */
+
+@media (min-width: 450px) {
+
+/* Hero Section */
+.hero img {
+    width: 85%;
+    height: auto;
+    margin-bottom: 4rem;
+}
+
+/* Introduction Text */
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;
+    font-size: 22px; 
+    word-spacing: 3px; 
+}
+
+.text_bold {
+    font-weight: bold; 
+    display: flex;
+    justify-content: center; 
+    padding-top: 25px;
+    padding-bottom: 5px; 
+}
+
+.text_bold_two {
+    font-weight: bold; 
+    display: flex;
+    justify-content: center; 
+    padding-top: 5px;
+    padding-bottom: 25px; 
+}
+
+.text_bold_three {
+    font-weight: bold; 
+    display: flex;
+    justify-content: center; 
+    padding: 25px;
+}
+
+.text_normal {
+    display: flex;
+    justify-content: center; 
+    padding: 25px; }
+
+}
