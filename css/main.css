@@ -45,14 +45,16 @@ header {
 }
 
 .burger-menu {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-left: 8%;
+    position: absolute;
+    right: 0;
+    top: 58px;
     margin-right: 8%;
+    z-index: 1;
+    cursor: pointer;
   }
 
   .burger-icon {
+
     cursor: pointer;
   }
   
@@ -70,24 +72,36 @@ header {
   }
  
   .nav-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    background-color: rgb(215, 199, 186);
     display: none;
-    background-color: rgb(215, 199, 186, 0.2);
-    height: 150px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
   }
 
   .nav-list li {
     padding: 5px;
     
   }
-  
+  #homepage {
+    padding-top: 80px;
+  }
   .nav-list a {
     text-decoration: none;
     color: #000000;
+    display: block;
+    padding: 20px;
+    font-size: 14px;
+    border-bottom: 0.5px solid rgb(67, 66, 66);
   }
   
+  .nav-list a:hover {
+    background-color: rgba(114, 78, 41, 0.2);
+  }
   .nav {
     list-style: none;
     font-size: 14px; 
@@ -121,6 +135,15 @@ header {
     text-align: left;
   }
 
+.nav-list .exit {
+position: absolute;
+  top: 40px;
+  right: 0;
+  margin-right: 8%;
+  font-size: 50px;
+  cursor: pointer;
+  color: #555;
+  }
 
 .logo {
     display: flex;
@@ -136,9 +159,9 @@ header {
 
 i { 
     position: absolute;
-    right: 8%;
-    top: 68px; 
-    font-size: 20px; 
+    left: 8%;
+    top: 60px; 
+    font-size: 30px; 
     color: black;
 }
 

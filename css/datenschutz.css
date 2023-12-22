@@ -5,9 +5,19 @@
     padding: 0;
 }
 
-* {
-    font-family: 'Nunito', sans-serif;
+/* Schritftart */
+@font-face {
+    font-family: 'TenorSans-Regular';
+    src: url(../font/Tenor_Sans/TenorSans-Regular.ttf);
+    font-display: auto;
 }
+/* * {
+    font-family: 'Nunito', sans-serif;
+} */
+
+* {
+    font-family: 'TenorSans-Regular';
+    }
 
 /* Mobile */
 
