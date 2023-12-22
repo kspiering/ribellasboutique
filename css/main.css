@@ -62,8 +62,8 @@ header {
   .burger-line {
     display: flex;
     flex-direction: column;
-    width: 40px;
-    height: 5px;
+    width: 35px;
+    height: 4px;
     background-color: black;
     margin: 5px 0;
     transition: 0.4s;
@@ -169,8 +169,8 @@ hr {
 
 .nav-footer ul {
     list-style: none;
-    font-size: 14px; 
-    gap: 14px;
+    font-size: 16px; 
+    gap: 18px;
     display: flex;
     flex-direction: column;
     margin-left: 8%;
@@ -189,8 +189,8 @@ small {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 13px;
-    margin-left: 8%;
+    font-size: 12px;
+    margin-left: 7%;
     margin-right: 8%;
     margin-bottom: 8%;
 }
