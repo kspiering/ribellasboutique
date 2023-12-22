@@ -4,10 +4,23 @@
     margin: 0;
     padding: 0;
 }
-
-* {
-    font-family: 'Nunito', sans-serif;
+/* Schritftart */
+@font-face {
+    font-family: 'TenorSans-Regular';
+    src: url(../font/Tenor_Sans/TenorSans-Regular.ttf);
 }
+
+@font-face {
+    font-family: 'NunitoSans_10pt-Medium';
+    src: url(../font/Nunito_Sans/static/NunitoSans_10pt-Medium.ttf);
+}
+* {
+font-family: 'TenorSans-Regular';
+}
+
+/* * {
+    font-family: 'NunitoSans_10pt-Medium';
+} */
 /* Mobile */
 
 /* Hero Section */
