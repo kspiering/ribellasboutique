@@ -29,17 +29,18 @@
 
 h1 {
     font-weight: bolder;
-    font-size: 20px; }
+    font-size: 20px; 
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
 
 h2 {
     font-weight: bolder;
     font-size: 19px;
-    padding-top: 10px;
 }
 h3 {
     font-weight: bolder;
     font-size: 18px;
-    padding-bottom: 25px;
 }
 
 .h3-winter, .h3-spring, .h3-summer, .h3-fall {
@@ -48,11 +49,13 @@ h3 {
 }
 
 .h3-spring, .h3-summer, .h3-fall {
-    padding-top: 40px;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
 }
 
 .h3-winter {
-    padding-top: 10px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
 }
 
 
@@ -68,8 +71,8 @@ h3 {
 }
 
 .body img {
-    width: 396px;
-    height: 596px;
+    width: 340px;
+    height: auto;
 }
 
 .body {
@@ -93,14 +96,15 @@ h3 {
 
 .image-winter-left, .image-spring-left, .image-summer-left, .image-fall-left {
     position: relative;
-    width: 396px;
-    height: 670px;
+    width: 340px;
+    height: 600px;
     display: block;
 }
 .images-winter, .images-spring, .images-summer, .images-fall {
     display: flex;
    justify-content: center;
 }
+
 
 /* Button */
 

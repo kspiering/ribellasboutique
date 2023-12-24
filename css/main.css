@@ -30,6 +30,16 @@ a {
     color: black;
 }
 
+/* Hover Links */
+
+a:hover {
+    text-decoration: underline;
+}
+
+#copy:hover {
+    text-decoration: underline;
+}
+
  @media (max-width: 620px) {
     .nav-header {
         display: none;
@@ -44,6 +54,7 @@ header {
     width: 100%;
 }
 
+/* Burger Menu */
 .burger-menu {
     position: absolute;
     right: 0;
@@ -145,6 +156,7 @@ position: absolute;
   color: #555;
   }
 
+  
 .logo {
     display: flex;
     justify-content: center; 
@@ -258,7 +270,7 @@ i {
     justify-content: space-evenly;
     list-style: none; 
     font-size: 25px;
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
 }
 
 
@@ -278,7 +290,7 @@ hr {
 .top-line {
    display: flex;
    justify-content: center;
-   margin-top: 4rem;
+   margin-top: 8rem;
 }
 
 .bottom-line {
@@ -309,7 +321,7 @@ small {
     flex-direction: row;
     justify-content: space-between;
     font-size: 20px;
-    margin-left: 8%;
+    margin-left: 7%;
     margin-right: 8%;
     margin-bottom: 8%;
 }
