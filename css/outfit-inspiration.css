@@ -20,9 +20,6 @@
 
 /* Mobile*/
 
-@media (max-width: 620px) {
-
-
 .title {
     display: flex;
     flex-direction: column;
@@ -32,18 +29,17 @@
 
 h1 {
     font-weight: bolder;
-    font-size: 20px; 
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-}
+    font-size: 20px; }
 
 h2 {
     font-weight: bolder;
     font-size: 19px;
+    padding-top: 10px;
 }
 h3 {
     font-weight: bolder;
     font-size: 18px;
+    padding-bottom: 25px;
 }
 
 .h3-winter, .h3-spring, .h3-summer, .h3-fall {
@@ -52,13 +48,11 @@ h3 {
 }
 
 .h3-spring, .h3-summer, .h3-fall {
-    margin-top: 8rem;
-    margin-bottom: 3rem;
+    padding-top: 40px;
 }
 
 .h3-winter {
-    margin-top: 1rem;
-    margin-bottom: 4rem;
+    padding-top: 10px;
 }
 
 
@@ -74,7 +68,7 @@ h3 {
 }
 
 .body img {
-    width: 340px;
+    width: 370px;
     height: auto;
 }
 
@@ -84,31 +78,28 @@ h3 {
     justify-content: center;
 }
 
+.image-winter-middle, .image-winter-right {
+    display: none;
+}
+.image-spring-middle, .image-spring-right {
+    display: none;
+}
+.image-summer-middle, .image-summer-right {
+    display: none;
+}
+.image-fall-middle, .image-fall-right {
+    display: none;
+}
 
-.images-winter, .images-spring, .images-summer, .images-fall{
-    overflow: hidden;
+.image-winter-left, .image-spring-left, .image-summer-left, .image-fall-left {
     position: relative;
-    width: 396px;
-    height: 670px;
+    width: 370px;
+    height: 640px;
     display: block;
-    justify-content: center;
 }
-
-.slider-winter {
-    width: 100%;
-    height: 100%
-}
-
-.image-winter-middle, .image-winter-right, .image-winter-left, .image-spring-middle, 
-.image-spring-right, .image-spring-left, .image-summer-middle, .image-summer-right, 
-.image-summer-left, .image-fall-middle, .image-fall-right, .image-fall-left {
-    display: block;
-    width: 100%;
-    height: 100%;
-    /* float: left; */
-    /* position: relative;
-    width: 340px;
-    height: 600px; */
+.images-winter, .images-spring, .images-summer, .images-fall {
+    display: flex;
+   justify-content: center;
 }
 
 /* Button */
@@ -116,10 +107,10 @@ h3 {
 .button {
     display: none;
 }
-}
+
 
 /* Tablet */
-@media (min-width: 620px) {
+@media (min-width: 825px) {
 
     .title {
         display: flex;
