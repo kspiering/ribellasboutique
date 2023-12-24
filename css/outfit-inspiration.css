@@ -20,7 +20,7 @@
 
 /* Mobile*/
 
-@media (max-width: 825px) {
+@media (max-width: 620px) {
 
 
 .title {
@@ -110,31 +110,6 @@ h3 {
     width: 340px;
     height: 600px; */
 }
-/* Arrows
-.arrow-container-winter, .arrow-container-spring,
-.arrow-container-summer, .arrow-container-fall {
-    position: relative;
-}
-.left, .right {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: rgb(215, 199, 186);
-    background: transparent;
-    border: none;
-}
-.image-winter-middle .left,
-.image-winter-middle .right,
-.image-spring-middle .left,
-.image-spring-middle .right,
-.image-summer-middle .left,
-.image-summer-middle .right,
-.image-fall-middle .left,
-.image-fall-middle .right {
-    margin-left: 8%;
-    margin-right: 8%;
-} */
 
 /* Button */
 
@@ -144,7 +119,7 @@ h3 {
 }
 
 /* Tablet */
-@media (min-width: 825px) {
+@media (min-width: 620px) {
 
     .title {
         display: flex;
