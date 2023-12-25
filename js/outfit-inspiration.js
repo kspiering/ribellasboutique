@@ -38,8 +38,12 @@
 
 const sliderContainer = document.querySelector(".image-winter1");
 const slides = document.querySelectorAll(".image-winter1");
-const leftButton = document.querySelector(".arrow-winter-left .left");
-const rightButton = document.querySelector(".arrow-winter-right .right");
+const leftButton = document.querySelector(
+  ".winter .images-winter .image-winter-right .arrow-winter-left.left"
+);
+const rightButton = document.querySelector(
+  ".winter .images-winter .image-winter-right .arrow-winter-right .right"
+);
 
 // Add event listeners
 leftButton.addEventListener("click", moveLeft);

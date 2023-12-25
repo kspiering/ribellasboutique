@@ -17,7 +17,10 @@
 * {
     font-family: 'TenorSans-Regular';
     }
+
 /* Mobile*/
+@media (max-width: 450px) {
+
 
 .title {
     display: flex;
@@ -54,22 +57,78 @@ h3 {
     padding-top: 10px;
 }
 
+/* Container Images-Winter */
 
+.winter, .spring, .summer, .fall {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 4%;
+}
+.images-winter, .images-spring, .images-summer, .images-fall {
+    height: 600px;
+    width: 400px;
+    display: flex;
+    overflow: hidden;
+  
+}
 
-/* Images */
+.arrow-winter-left, .arrow-spring-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-left: 2%;
+
+}
+
+.arrow-winter-right, .arrow-spring-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-right: 2%;
+    
+   
+}
+
+.left, .right {
+    background-color: transparent;
+    color: rgb(215, 199, 186);
+    border: none;
+   font-size: 30px;
+ 
+}
+
+.image-winter-right, .image-spring-right {
+    height: 590px;
+    width: 400px;
+}
+.image-winter1, .image-spring1 {
+    height: auto;
+    width: 370px;
+    display: flex;
+    justify-content: center;
+    
+}
+.images-winter img, .images-spring img, .images-summer img, .images-fall img {
+    height: auto;
+    width: 310px;
+    
+}
 
 .body span {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 12%;
     font-size: 55px; 
     color: rgb(215, 199, 186);
+    margin-right: 8%;
 }
 
-.body img {
-    width: 330px;
+/* .body img {
+    width: 360px;
     height: auto;
-}
+} */
 
 .body {
     display: flex;
@@ -77,36 +136,13 @@ h3 {
     justify-content: center;
 }
 
-.image-winter-middle, .image-winter-right {
-    display: none;
-}
-.image-spring-middle, .image-spring-right {
-    display: none;
-}
-.image-summer-middle, .image-summer-right {
-    display: none;
-}
-.image-fall-middle, .image-fall-right {
-    display: none;
-}
-
-.image-winter-left, .image-spring-left, .image-summer-left, .image-fall-left {
-    position: relative;
-    width: 330px;
-    height: 570px;
-    display: block;
-}
-.images-winter, .images-spring, .images-summer, .images-fall {
-    display: flex;
-   justify-content: center;
-}
 
 /* Button */
 
 .button {
     display: none;
 }
-
+}
 
 /* Tablet */
 @media (min-width: 825px) {
