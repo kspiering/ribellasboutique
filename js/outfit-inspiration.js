@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const sliderContainer = document.querySelector(".images-all");
+  const playPauseButton = document.getElementById("play");
+  const pauseButton = document.getElementById("pause");
 
   document
     .querySelector(".arrow-container .left")
@@ -9,32 +11,39 @@ document.addEventListener("DOMContentLoaded", function () {
     .querySelector(".arrow-container .right")
     .addEventListener("click", moveRight);
 
-  let currentSlide = 1;
+  let isPlaying = true;
+  let slideInterval;
+
+  playPauseButton.addEventListener("click", togglePlayPause);
 
   function moveRight() {
-    sliderContainer.append(document.querySelectorAll(".slide")[0]);
+    clearInterval(slideInterval); // Stoppe die automatische Slideshow
+    sliderContainer.appendChild(document.querySelector(".slide"));
+    if (isPlaying) {
+      slideInterval = setInterval(moveRight, 3000); // Starte die automatische Slideshow wieder
+    }
   }
 
   function moveLeft() {
-    const arrayLength = document.querySelectorAll(".slide").length;
-
-    sliderContainer.prepend(
-      document.querySelectorAll(".slide")[arrayLength - 1]
-    );
+    clearInterval(slideInterval); // Stoppe die automatische Slideshow
+    const slides = document.querySelectorAll(".slide");
+    sliderContainer.insertBefore(slides[slides.length - 1], slides[0]);
+    if (isPlaying) {
+      slideInterval = setInterval(moveRight, 3000); // Starte die automatische Slideshow wieder
+    }
   }
+
+  function togglePlayPause() {
+    isPlaying = !isPlaying;
+    if (isPlaying) {
+      playPauseButton.textContent = "Pause";
+      slideInterval = setInterval(moveRight, 3000);
+    } else {
+      playPauseButton.textContent = "Play";
+      clearInterval(slideInterval);
+    }
+  }
+
+  // Starte die Slideshow automatisch
+  slideInterval = setInterval(moveRight, 3000);
 });
-
-function togglePlayPause() {
-  var playIcon = document.getElementById("play");
-  var pauseIcon = document.getElementById("pause");
-
-  if (playIcon.style.display === "none") {
-    playIcon.style.display = "inline";
-    pauseIcon.style.display = "none";
-    // Hier kannst du die Logik hinzufügen, um die Wiedergabe zu pausieren.
-  } else {
-    playIcon.style.display = "none";
-    pauseIcon.style.display = "inline";
-    // Hier kannst du die Logik hinzufügen, um die Wiedergabe fortzusetzen.
-  }
-}

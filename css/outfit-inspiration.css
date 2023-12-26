@@ -44,7 +44,7 @@ h2 {
  .images-all {
     overflow: hidden;
     height: 500px;
-    width: 500px;
+    width: 350px;
     margin-left: 8%;
     margin-right: 8%; 
 } 
@@ -118,7 +118,7 @@ button:hover {
 }
 }
 /* Tablet */
-@media (min-width: 970px) {
+@media (min-width: 670px) {
 
     .title {
         display: flex;
@@ -148,9 +148,9 @@ button:hover {
     .images-all {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         flex-wrap: wrap;
-        gap: 80px;
+        gap: 70px;
         height: 100%;
         width: 100%;
     }
