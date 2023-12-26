@@ -43,15 +43,16 @@ h2 {
 
  .images-all {
     overflow: hidden;
-    height: 500px;
+    height: 520px;
     width: 500px;
-    margin-left: 8%;
-    margin-right: 8%; 
+    
 } 
 
 .images-all img {
     height: auto;
     width: 320px;
+    margin-left: 16%;
+    margin-right: 16%;
 }
 
 .slide {
@@ -70,7 +71,8 @@ button:focus {
   }
   
 button:hover {
-    background-color: rgb(215, 199, 186);
+    background: transparent;
+    color: rgb(215, 199, 186);
     cursor: pointer;
   }
 
@@ -80,10 +82,8 @@ button:hover {
 }
 .safe_mobile p {
     text-decoration: none;
-    font-size: 18px;
-    text-align: right;
-    margin-right: 8%;
-    margin-bottom: 1rem;
+    font-size: 20px;
+    text-align: center;
   
 }
 
@@ -95,26 +95,17 @@ button:hover {
 
 .arrow-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
-    margin-right: 8%;
-    margin-left: 8%;
 }
 .left,
-.right, #play, #pause {
-  color: black;
+.right {
+  color: rgb(215, 199, 186);
   background: transparent;
   border: none;
-  font-size: 14px;
-  border-radius: 3px;
-  height: 40px;
-  width: 70px;
-  background-color: rgb(215, 199, 186);
-  cursor: pointer;
-}
+  font-size: 40px;
+  margin-top: -12px;
 
-#pause {
-    display: none;
 }
 }
 /* Tablet */

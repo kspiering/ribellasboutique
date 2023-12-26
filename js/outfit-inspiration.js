@@ -23,3 +23,18 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 });
+
+function togglePlayPause() {
+  var playIcon = document.getElementById("play");
+  var pauseIcon = document.getElementById("pause");
+
+  if (playIcon.style.display === "none") {
+    playIcon.style.display = "inline";
+    pauseIcon.style.display = "none";
+    // Hier kannst du die Logik hinzufügen, um die Wiedergabe zu pausieren.
+  } else {
+    playIcon.style.display = "none";
+    pauseIcon.style.display = "inline";
+    // Hier kannst du die Logik hinzufügen, um die Wiedergabe fortzusetzen.
+  }
+}

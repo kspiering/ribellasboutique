@@ -135,8 +135,6 @@ header {
     display: flex;
   }
 
-
-
   .menu-list.show {
     display: flex;
   }
@@ -224,7 +222,7 @@ small {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 7%;
     margin-right: 8%;
     margin-bottom: 8%;
