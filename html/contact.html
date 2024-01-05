@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="../js/main.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="../images/WebP/Logo-big.webp" alt="Logo Ribellas Boutique">
+            <i class="fa-solid fa-circle-user"></i>
+        </section>
+
+        <nav class="nav-header">
+            <ul>
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="trends.html">Trends</a></li>
+                <li><a href="outfit-inspiration.html">Outfit Inspiration</a></li>
+                <li><a href="your-albums.html">Your Albums</a></li>
+            </ul>
+        </nav>
+
+        <nav class="burger-menu">
+            <div class="burger">
+                <div class="burger-icon" id="burger-icon">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+              </div>
+              <div class="mobile-navigation">
+                <ul class="nav-list" id="mobile-nav-content">
+                    <div class="nav">
+                        <li id="homepage"><a href="../index.html">Homepage</a></li>
+                        <li><a href="trends.html">Trends</a></li>
+                        <li><a href="outfit-inspiration.html">Outfit Inspiration</a></li>
+                        <li><a href="your-albums.html">Your Albums</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="exit" id="exit">&times;</li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="form">
+        <div class="titles">
+            <h1>Contact Form</h1>
+            <h2>Please contact me</h2>
+        </div>
+    
+
+        <div class="outer">
+            <div class="inner">
+                <section id="contact">
+                <form>
+                    <label for="anrede">Anrede</label>
+                    <br>
+                    <br>
+                    <select id="anrede" name="anrede" required>
+                      <option value="frau">Frau</option>
+                      <option value="herr">Herr</option>
+                      <option value="sonstiges">Andere</option>
+                    </select>
+                    <br>
+                 <br>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="First Name">
+                <br>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Last Name">
+                <br>
+                <label for="adress">Address</label>
+                <input type="text" id="address" placeholder="Adress">
+                <br>
+                <label for="Place">City</label>
+                <input type="text" id="city" placeholder="City">
+                <br>
+                <label for="ZIP_code">ZIP Code</label>
+                <input type="text" id="zip-code" placeholder="ZIP Code">
+                <br>
+                <label for="email-adress">Email Address</label>
+                <input type="text" id="email-address" placeholder="Email">
+                <br>
+                <label for="your-message">Your Message</label>
+                <textarea name="message" id="message" cols="50" rows="10" placeholder="Message"></textarea>
+                <br>
+                <br>
+                <div class="button">
+                    <button type="submit">Send</button>
+                </div>
+              
+                </form>
+            </div>
+            </div>
+    </section>
+        
+    <footer>
+        <div class="top-line">
+            <hr>
+        </div>
+    <section class="footer">
+        <div class="logo-small">
+            <img src="../images/WebP/Logo-small.webp" alt="Small Logo RB">
+        </div>
+
+        <nav class="nav-footer">
+            <ul>
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="trends.html">Trends</a></li>
+                <li><a href="outfit-inspiration.html">Outfit Inspiration</a></li>
+                <li><a href="your-albums.html">Your Albums</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        
+    </section>
+
+        <div class="bottom-line">
+            <hr>
+        </div>
+
+        <small> <span id="copy">&copy;Copyright 2024 </span> <span> <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></span></small>
+    </footer>
+    
+</body>
+</html>
