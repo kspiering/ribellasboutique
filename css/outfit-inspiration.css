@@ -247,25 +247,7 @@ h2 {
 }
 
 
-/* Explore More Button */
-.button {
-    display: flex;
-    justify-content: center;
-    margin-top: 8rem;
-    
-}
-.button-explore {
-    background-color: rgb(215, 199, 186);
-    border: none;
-    height: 50px;
-    width: 180px;
-    font-weight: bolder;
-    font-size: 20px;
-    border-radius: 3px;
-    
-}
-
-/* Safe */
+/* Save */
 .safe_mobile p {
     display: none;
 }
