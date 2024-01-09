@@ -43,15 +43,15 @@ h2 {
 
  .images-all {
     overflow: hidden;
-    height: 500px;
-    width: 350px;
+    height: 510px;
+    width: 380px;
     margin-left: 8%;
     margin-right: 8%; 
 } 
 
 .images-all img {
     height: auto;
-    width: 320px;
+    width: 340px;
 }
 
 .slide {
@@ -74,7 +74,7 @@ button:hover {
     cursor: pointer;
   }
 
-/* Safe */
+/* Save */
 .safe p {
     display: none;
 }
@@ -83,7 +83,8 @@ button:hover {
     font-size: 18px;
     text-align: right;
     margin-right: 8%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   
 }
 
@@ -99,6 +100,7 @@ button:hover {
     flex-direction: row;
     margin-right: 8%;
     margin-left: 8%;
+    margin-bottom: 3rem;
 }
 .left,
 .right, #play, #pause {

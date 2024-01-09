@@ -30,21 +30,22 @@
 h1 {
     font-weight: bolder;
     font-size: 20px; 
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
 }
-h2 {
-    font-weight: bolder;
-    font-size: 19px;
-    margin-bottom: 2rem;
-    margin-left: 8%;
-    margin-right: 8%;
-}
+
 
 .outer {
     display: flex;
     justify-content: center;
     margin-left: 8%;
     margin-right: 8%;
+}
+
+select {
+    width: 70px;
+    height: 40px;
+    border: 1px solid rgb(74, 74, 74);
+    background-color: rgb(215, 199, 186, 0.2);
 }
 
 label {
@@ -64,6 +65,9 @@ textarea {
     display: block;
     width: 100%;
     margin-bottom: 2rem;
+    margin-top: 1rem;
+    background-color: rgb(215, 199, 186, 0.2);
+    border: 1px solid rgb(74, 74, 74);
 }
 input {
     height: 40px;
@@ -72,6 +76,8 @@ input {
     width: 100%;
     margin-bottom: 0.5rem;
     margin-top: 1rem;
+    background-color: rgb(215, 199, 186, 0.2);
+    border: 1px solid rgb(74, 74, 74);
 }
 
 input::placeholder {
@@ -111,21 +117,22 @@ button:hover {
     
     h1 {
         font-weight: bolder;
-        font-size: 35px; }
+        font-size: 35px;
+        margin-bottom: 8rem;
+     }
     
-    h2 {
-        font-weight: bolder;
-        font-size: 30px;
-        padding-top: 20px;
-        margin-bottom: 4rem;
-        
-    }
 
 .outer {
     display: flex;
     justify-content: center;
     margin-left: 8%;
     margin-right: 8%;
+}
+select {
+    width: 70px;
+    height: 40px;
+    border: 1px solid rgb(74, 74, 74);
+    background-color: rgb(215, 199, 186, 0.2);
 }
 
 label {
@@ -140,11 +147,15 @@ textarea::placeholder {
     top: 10px;
     left: 10px;
     
+    
 }
 textarea {
     display: block;
     width: 100%;
     margin-bottom: 2rem;
+    margin-top: 1rem;
+    background-color: rgb(215, 199, 186, 0.2);
+    border: 1px solid rgb(74, 74, 74);
 }
 input {
     height: 40px;
@@ -153,6 +164,8 @@ input {
     width: 100%;
     margin-bottom: 0.5rem;
     margin-top: 1rem;
+    background-color: rgb(215, 199, 186, 0.2);
+    border: 1px solid rgb(74, 74, 74);
 }
 
 input::placeholder {
