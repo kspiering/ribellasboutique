@@ -44,14 +44,14 @@ h2 {
  .images-all {
     overflow: hidden;
     height: 510px;
-    width: 380px;
+    width: 390px;
     margin-left: 8%;
     margin-right: 8%; 
 } 
 
 .images-all img {
     height: auto;
-    width: 340px;
+    width: 360px;
 }
 
 .slide {
