@@ -1,3 +1,5 @@
+// Mobile Version Play / Pause Button und Next / Previous Slide Buttons
+
 document.addEventListener("DOMContentLoaded", function () {
   if (window.innerWidth < 670) {
     const sliderContainer = document.querySelector(".images-all");
@@ -12,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .querySelector(".arrow-container .right")
       .addEventListener("click", moveRight);
 
-    let isPlaying = false; // Startet als false, da die automatische Slideshow noch nicht gestartet wurde
+    let isPlaying = false;
     let slideInterval;
 
     playPauseButton.addEventListener("click", togglePlayPause);
@@ -41,10 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         clearInterval(slideInterval);
       }
     }
-
-    // Die automatische Slideshow startet nicht automatisch
-    // slideInterval = setInterval(moveRight, 3000);
   }
 
-  alert("Sie verwenden die mobile Version!");
+  alert("only on mobile!");
 });
