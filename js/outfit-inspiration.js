@@ -12,41 +12,39 @@ document.addEventListener("DOMContentLoaded", function () {
       .querySelector(".arrow-container .right")
       .addEventListener("click", moveRight);
 
-    let isPlaying = true;
+    let isPlaying = false; // Startet als false, da die automatische Slideshow noch nicht gestartet wurde
     let slideInterval;
 
     playPauseButton.addEventListener("click", togglePlayPause);
 
     function moveRight() {
-      clearInterval(slideInterval); // Stoppe die automatische Slideshow
       sliderContainer.appendChild(document.querySelector(".slide"));
-      if (isPlaying) {
-        slideInterval = setInterval(moveRight, 3000); // Starte die automatische Slideshow wieder
-      }
     }
 
     function moveLeft() {
-      clearInterval(slideInterval); // Stoppe die automatische Slideshow
       const slides = document.querySelectorAll(".slide");
       sliderContainer.insertBefore(slides[slides.length - 1], slides[0]);
-      if (isPlaying) {
-        slideInterval = setInterval(moveRight, 3000); // Starte die automatische Slideshow wieder
-      }
     }
 
     function togglePlayPause() {
       isPlaying = !isPlaying;
       if (isPlaying) {
         playPauseButton.textContent = "Pause";
-        slideInterval = setInterval(moveRight, 3000);
+        slideInterval = setInterval(function () {
+          moveRight();
+          if (!isPlaying) {
+            clearInterval(slideInterval);
+          }
+        }, 3000);
       } else {
         playPauseButton.textContent = "Play";
         clearInterval(slideInterval);
       }
     }
 
-    // Starte die Slideshow automatisch
-    slideInterval = setInterval(moveRight, 3000);
+    // Die automatische Slideshow startet nicht automatisch
+    // slideInterval = setInterval(moveRight, 3000);
   }
+
   alert("Sie verwenden die mobile Version!");
 });
