@@ -44,6 +44,4 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   }
-
-  alert("only on mobile!");
 });
