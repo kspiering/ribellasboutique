@@ -10,15 +10,13 @@
     src: url(../font/Tenor_Sans/TenorSans-Regular.ttf);
     font-display: auto;
 }
-/* * {
-    font-family: 'Nunito', sans-serif;
-} */
 
 * {
     font-family: 'TenorSans-Regular';
     }
+
 /* Mobile*/
-@media (max-width: 970px) {
+@media (max-width: 670px) {
     
 .title {
     display: flex;
@@ -39,19 +37,22 @@ h2 {
 }
 
 /* Images */
-
+.container-images {
+    display: flex;
+    justify-content: center;
+}
 
  .images-all {
     overflow: hidden;
     height: 510px;
-    width: 390px;
+    width: 380px;
     margin-left: 8%;
     margin-right: 8%; 
 } 
 
 .images-all img {
     height: auto;
-    width: 360px;
+    width: 350px;
 }
 
 .slide {
@@ -74,7 +75,7 @@ button:hover {
     cursor: pointer;
   }
 
-/* Save */
+/* Safe */
 .safe p {
     display: none;
 }
@@ -92,7 +93,7 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Arrows */
+/* Buttons */
 
 .arrow-container {
     display: flex;
