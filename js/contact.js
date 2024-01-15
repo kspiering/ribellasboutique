@@ -61,7 +61,7 @@ function validateForm(event) {
   }
 
   if (!data.email) {
-    validationErrors.email = "Please enter your email";
+    validationErrors.email = "Please enter a valid email-address";
   } else {
     const emailRegExp =
       /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
