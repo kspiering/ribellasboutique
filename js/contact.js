@@ -1,6 +1,6 @@
 document.querySelector("#submit").addEventListener("click", validateForm);
 
-const inputFields = document.querySelectorAll("form");
+const inputFields = document.querySelectorAll("form input");
 inputFields.forEach((field) => {
   field.addEventListener("focusout", function () {
     if (!field.value.trim()) {
