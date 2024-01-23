@@ -4,11 +4,11 @@
       "id": 1,
       "title": "Parisian Elegance: A Timeless Affair with Fashion",
       "subtitle": "Unveiling the Secrets of Effortless Chic",
-      "location": "Paris France",
+      "location": "Paris, France",
       "date": "08.06.2023",
       "text": "Discover Parisian elegance—a lifestyle where every cobblestone whispers haute couture tales. Streets transform into runways, adorned with ensembles blending classic sophistication and modern trends.",
       "image": "../images/JPG/blog/haute-couture.jpg",
-      "tags": ["fashion" , "paris"]
+      "tags": ["fashion"]
     },
     
     {

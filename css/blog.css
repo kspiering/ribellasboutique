@@ -21,20 +21,80 @@
     }
 
 /* Mobile */
-@media (max-width: 600px) {
+  @media (max-width: 700px) {
 
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .blogPost {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border: 1px solid black;
+        height: 650px;
+        width:  390px;
+        margin-bottom: 4rem;
+
+    }
     .titles {
         display: flex;
         flex-direction: column;
-        align-items: center; 
-    }
-    h1 {
-        font-weight: bolder;
-        font-size: 20px; }
-}
+        align-items: center;
+        }
+        
+        h1 {
+            font-weight: bolder;
+            font-size: 20px;
+            margin-bottom: 4rem;
+         }
 
-@media (min-width: 600px) {
-    
+         img {
+            width: 280px;
+            height: auto;
+         }
+
+         p {
+            font-size: 14px;
+            padding: 2.5px;
+         }
+
+        #location {
+            font-family: cursive;
+        }
+
+        #tags {
+            margin-bottom: 2rem;
+            color: rgb(36, 148, 234);
+            font-family: cursive;
+        }
+} 
+
+@media (min-width: 700px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .blogPost {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border: 1px solid black;
+        height: 800px;
+        width: 900px;
+        margin-bottom: 4rem;
+
+    }
     .titles {
         display: flex;
         flex-direction: column;
@@ -44,5 +104,27 @@
         h1 {
             font-weight: bolder;
             font-size: 35px;
+            margin-bottom: 8rem;
          }
+
+         img {
+            width: 400px;
+            height: auto;
+         }
+
+         p {
+            font-size: 18px;
+            padding: 5px;
+         }
+
+        #location {
+            font-family: cursive;
+        }
+
+        #tags {
+            margin-bottom: 4rem;
+            color: rgb(36, 148, 234);
+            font-family: cursive;
+        }
+
 }
