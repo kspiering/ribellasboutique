@@ -1,0 +1,62 @@
+[
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "Parisian Elegance: A Timeless Affair with Fashion",
+      "subtitle": "Unveiling the Secrets of Effortless Chic",
+      "location": "Paris France",
+      "date": "08.06.2023",
+      "text": "Discover Parisian elegance—a lifestyle where every cobblestone whispers haute couture tales. Streets transform into runways, adorned with ensembles blending classic sophistication and modern trends.",
+      "image": "../images/JPG/blog/haute-couture.jpg",
+      "tags": ["fashion" , "paris"]
+    },
+    
+    {
+    "userId": 1,
+    "id": 2,
+    "title": "Metropolitan Maven: Modern Elegance in the Concrete Jungle",
+    "subtitle": "Navigating Contemporary Fashion in the Urban Landscape",
+    "location": "New York City, USA",
+    "date": "02.11.2023",
+    "text": "Dive into the world of metropolitan fashion—a realm where concrete jungles become catwalks. Explore the fusion of modern elegance with the ever-evolving trends of the urban landscape.",
+    "image": "../images/JPG/blog/metropolitan-maven.jpg",
+    "tags": ["fashion", "contemporary", "urban"]
+    },
+
+    {
+    "userId": 1,
+    "id": 3,
+    "title": "Mediterranean Chic: Sailing Through Style in Capri",
+    "subtitle": "A Fashionable Odyssey on the Island of Glamour",
+    "location": "Capri, Italy",
+    "date": "07.02.2023",
+    "text": "Embark on a fashionable odyssey in Capri, where the Mediterranean breeze carries whispers of chic style. Explore ensembles that mirror the island's effortless and sun-kissed allure.",
+    "image": "../images/JPG/blog/mediterranean-chic.jpg",
+    "tags": ["fashion", "chic", "island"]
+    },
+
+    {
+    "userId": 1,
+    "id": 4,
+    "title": "Barcelona Bliss: Flamenco Flair Meets Urban Chic",
+    "subtitle": "Dancing Through the Intersection of Tradition and Modernity",
+    "location": "Barcelona, Spain",
+    "date": "09.09.2023",
+    "text": "Experience the bliss of Barcelona, where Flamenco flair intertwines with urban chic. Explore ensembles that capture the essence of tradition while embracing the vibrant spirit of modernity.",
+    "image": "../images/JPG/blog/barcelona-bliss.jpg",
+    "tags": ["fashion", "flamenco", "chic"]
+    },
+
+    {
+    "userId": 1,
+    "id": 5,
+    "title": "Santorini Serenity: Grecian Elegance Amidst Azure Horizons",
+    "subtitle": "A Fashionable Odyssey in the Aegean Paradise",
+    "location": "Santorini, Greece",
+    "date": "12.10.2023",
+    "text": "Embark on a fashionable odyssey in Santorini, where Grecian elegance meets azure horizons. Explore ensembles that mirror the island's timeless charm against a backdrop of breathtaking views.",
+    "image": "../images/JPG/blog/santorini-serenity.jpg",
+    "tags": ["fashion", "Grecian", "elegance"]
+    }     
+
+]
