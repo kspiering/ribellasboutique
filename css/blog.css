@@ -8,16 +8,18 @@
 
 /* Schritftart */
 @font-face {
-    font-family: 'TenorSans-Regular';
-    src: url(../font/Tenor_Sans/TenorSans-Regular.ttf);
+    font-family: 'FiraSans-Light';
+    src: url(../font/Fira_Sans/FiraSans-Light.ttf), url(../font/Fira_Sans/FiraSans-Black.ttf);
     font-display: auto;
 }
-/* * {
-    font-family: 'Nunito', sans-serif;
-} */
+@font-face {
+    font-family: 'FiraSans-Bold';
+    src: url(../font/Fira_Sans/FiraSans-Bold.ttf);
+    font-display: auto;
+}
 
-* {
-    font-family: 'TenorSans-Regular';
+p {
+    font-family: 'FiraSans-Light';
     }
 
 /* Mobile */
@@ -27,18 +29,18 @@
     .container {
         display: flex;
         flex-direction: column;
-      align-items: center;
+        align-items: center;
         margin-bottom: 4rem;
     }
 
-    .blogPost {
+    section .blogPost {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: white;
+      background-color: rgb(255, 255, 255);
         border: 1px solid black;
-        height: 650px;
-        width:  390px;
+        height: 100%;
+        width: 380px;
         margin-bottom: 4rem;
 
     }
@@ -55,13 +57,16 @@
          }
 
          img {
-            width: 280px;
+            width: 270px;
             height: auto;
+            margin-top: 1rem;
          }
 
          p {
             font-size: 14px;
-            padding: 2.5px;
+            padding: 5px;
+            margin-left: 1rem;
+            margin-right: 1rem;
          }
 
         #location {
@@ -70,8 +75,16 @@
 
         #tags {
             margin-bottom: 2rem;
-            color: rgb(36, 148, 234);
+            color: rgb(54, 54, 54);
             font-family: cursive;
+        }
+        #titel {
+            margin-top: 1rem;
+            font-family: 'FiraSans-Bold';
+        }
+        #text {
+            margin-bottom: 1rem;
+            text-wrap: wrap;
         }
 } 
 
@@ -80,19 +93,22 @@
     .container {
         display: flex;
         flex-direction: column;
-      align-items: center;
-        margin-bottom: 4rem;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+     
     }
 
-    .blogPost {
+    section .blogPost {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         border: 1px solid black;
-        height: 800px;
+        height: 100%;
         width: 900px;
         margin-bottom: 4rem;
+    
 
     }
     .titles {
@@ -110,11 +126,14 @@
          img {
             width: 400px;
             height: auto;
+            margin-top: 2rem;
          }
 
          p {
             font-size: 18px;
             padding: 5px;
+            margin-left: 3rem;
+            margin-right: 3rem;
          }
 
         #location {
@@ -122,9 +141,18 @@
         }
 
         #tags {
-            margin-bottom: 4rem;
-            color: rgb(36, 148, 234);
+            margin-bottom: 2rem;
+           color: rgb (54, 54, 54);
             font-family: cursive;
         }
 
+        #titel {
+            margin-top: 2rem;
+            font-family: 'FiraSans-Bold';
+        }
+        #text {
+            margin-bottom: 2rem;
+            text-wrap: wrap;
+        }
+        
 }

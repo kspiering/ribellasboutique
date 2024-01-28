@@ -15,9 +15,9 @@ function displayPost(data) {
             <p id="titel">${blogPost.title}</p>
             <p id="subtitle"> ${blogPost.subtitle} </p>
             <p id="location">${blogPost.location} ${blogPost.date} </p>
-            <p id="text"> ${blogPost.text} </p>
             <img src="${blogPost.image}">
             <p id="tags">#${blogPost.tags} </p>
+            <p id="text"> ${blogPost.text} </p>
         
         `;
 
