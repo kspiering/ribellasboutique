@@ -40,7 +40,7 @@ a:hover {
     text-decoration: underline;
 }
 
- @media (max-width: 620px) {
+ @media (max-width: 650px) {
     .nav-header {
         display: none;
     }
@@ -230,7 +230,7 @@ small {
 }
  }
 /* Desktop */
-@media (min-width: 620px) { 
+@media (min-width: 650px) { 
 
     .burger-menu {
         display: none;
