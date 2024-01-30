@@ -6,7 +6,6 @@ async function getData() {
   displayPost(data);
 }
 
-displayPost();
 function displayPost(data) {
   data.forEach((blogPost) => {
     const div = document.createElement("div");
