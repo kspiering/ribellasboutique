@@ -20,7 +20,7 @@
     "date": "02.11.2023",
     "text": "Dive into the world of metropolitan fashion—a realm where concrete jungles become catwalks. Explore the fusion of modern elegance with the ever-evolving trends of the urban landscape.",
     "image": "../images/JPG/blog/metropolitan-maven.jpg",
-    "tags": ["contemporary", "urban"]
+    "tags": ["urban"]
     },
 
     {
@@ -32,7 +32,7 @@
     "date": "07.02.2023",
     "text": "Embark on a fashionable odyssey in Capri, where the Mediterranean breeze carries whispers of chic style. Explore ensembles that mirror the island's effortless and sun-kissed allure.",
     "image": "../images/JPG/blog/mediterranean-chic.jpg",
-    "tags": ["chic", "island"]
+    "tags": ["chic"]
     },
 
     {
@@ -44,7 +44,7 @@
     "date": "09.09.2023",
     "text": "Experience the bliss of Barcelona, where Flamenco flair intertwines with urban chic. Explore ensembles that capture the essence of tradition while embracing the vibrant spirit of modernity.",
     "image": "../images/JPG/blog/barcelona-bliss.jpg",
-    "tags": ["flamenco", "chic"]
+    "tags": ["flamenco"]
     },
 
     {
@@ -56,7 +56,7 @@
     "date": "12.10.2023",
     "text": "Embark on a fashionable odyssey in Santorini, where Grecian elegance meets azure horizons. Explore ensembles that mirror the island's timeless charm against a backdrop of breathtaking views.",
     "image": "../images/JPG/blog/santorini-serenity.jpg",
-    "tags": ["Grecian", "elegance"]
+    "tags": ["elegance"]
     }     
 
 ]
