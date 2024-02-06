@@ -2,7 +2,7 @@ document.querySelector("#submit").addEventListener("click", validateForm);
 
 const inputFields = document.querySelectorAll("form input");
 inputFields.forEach((field) => {
-  field.addEventListener("focusout", function (event) {
+  field.addEventListener("mouseout", function (event) {
     event.preventDefault();
     const existingError = field.nextElementSibling;
 
