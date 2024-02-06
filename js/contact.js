@@ -2,15 +2,28 @@ document.querySelector("#submit").addEventListener("click", validateForm);
 
 const inputFields = document.querySelectorAll("form input");
 inputFields.forEach((field) => {
-  field.addEventListener("mouseout", function (event) {
+  field.addEventListener("focusout", function (event) {
     event.preventDefault();
+    const existingError = field.nextElementSibling;
+
     if (!field.value.trim()) {
       field.style.backgroundColor = "pink";
+      if (!existingError || !existingError.classList.contains("error")) {
+        const errorText = document.createElement("span");
+        errorText.classList.add("error");
+        errorText.innerHTML = "Please enter value";
+        errorText.style.color = "red";
+        field.after(errorText);
+      }
     } else {
       field.style.backgroundColor = "";
+      if (existingError && existingError.classList.contains("error")) {
+        existingError.remove();
+      }
     }
   });
 });
+
 function validateForm(event) {
   event.preventDefault();
 
@@ -102,6 +115,14 @@ function validateForm(event) {
   }
 
   function displayError(validationErrors) {
+    if (validationErrors.salutation) {
+      const errorContainer = document.createElement("span");
+      errorContainer.classList.add("error");
+      errorContainer.innerHTML = validationErrors.salutation;
+      errorContainer.style.color = "red";
+      document.querySelector("#anrede").after(errorContainer);
+    }
+
     if (validationErrors.firstName) {
       const errorContainer = document.createElement("span");
       errorContainer.classList.add("error");
