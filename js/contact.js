@@ -2,7 +2,8 @@ document.querySelector("#submit").addEventListener("click", validateForm);
 
 const inputFields = document.querySelectorAll("form input");
 inputFields.forEach((field) => {
-  field.addEventListener("focusout", function () {
+  field.addEventListener("mouseout", function (event) {
+    event.preventDefault();
     if (!field.value.trim()) {
       field.style.backgroundColor = "pink";
     } else {
@@ -30,14 +31,24 @@ function validateForm(event) {
   data.email = document.querySelector("#email-address").value;
   data.message = document.querySelector("#message").value;
 
+  if (!data.salutation) {
+    validationErrors.salutation = "Please select your salutation";
+  } else {
+    console.info("Salutation: ", data.salutation);
+  }
+
   if (!data.firstName) {
     validationErrors.firstName = "Please enter your first name";
+  } else if (!/^[a-zA-Z]+$/.test(data.firstName)) {
+    validationErrors.firstName = "First name can only contain letters";
   } else {
     console.info("First name: ", data.firstName);
   }
 
   if (!data.lastName) {
     validationErrors.lastName = "Please enter your last name";
+  } else if (!/^[a-zA-Z]+$/.test(data.lastName)) {
+    validationErrors.lastName = "Last name can only contain letters";
   } else {
     console.info("Last name: ", data.lastName);
   }
@@ -50,24 +61,30 @@ function validateForm(event) {
 
   if (!data.city) {
     validationErrors.city = "Please enter your city";
+  } else if (!/^[a-zA-Z]+$/.test(data.city)) {
+    validationErrors.city = "City name can only contain letters";
   } else {
     console.info("City: ", data.city);
   }
 
   if (!data.ZipCode) {
     validationErrors.ZipCode = "Please enter your zip code";
+  } else if (!/^\d+$/.test(data.ZipCode)) {
+    validationErrors.ZipCode = "Zip code must contain only numbers";
+  } else if (data.ZipCode.length < 4) {
+    validationErrors.ZipCode = "Zip code must have at least 4 digits";
   } else {
     console.info("Zip code: ", data.ZipCode);
   }
 
   if (!data.email) {
-    validationErrors.email = "Please enter a valid email-address";
+    validationErrors.email = "Please enter a valid email address";
   } else {
     const emailRegExp =
-      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     if (!emailRegExp.test(data.email)) {
-      validationErrors.email = "Please enter your email address";
+      validationErrors.email = "Please enter a valid email address";
     } else {
       console.info("Email: ", data.email);
     }

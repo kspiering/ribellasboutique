@@ -37,6 +37,13 @@ h2 {
     margin-bottom: 2rem;
 }
 
+.pflicht {
+    font-size: 20px; 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
 .outer {
     display: flex;
     justify-content: center;
@@ -120,7 +127,8 @@ button:hover {
     
     h1 {
         font-weight: bolder;
-        font-size: 35px; }
+        font-size: 35px; 
+    }
     
     h2 {
         font-weight: bolder;
@@ -129,7 +137,12 @@ button:hover {
         margin-bottom: 8rem;
         
     }
-    
+    .pflicht {
+        font-size: 20px; 
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
 
 .outer {
     display: flex;
