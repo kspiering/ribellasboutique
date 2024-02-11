@@ -7,16 +7,18 @@
 }
 /* Schritftart */
 @font-face {
-    font-family: 'TenorSans-Regular';
-    src: url(../font/Tenor_Sans/TenorSans-Regular.ttf);
+    font-family: 'FiraSans-Light';
+    src: url(../font/Fira_Sans/FiraSans-Light.ttf), url(../font/Fira_Sans/FiraSans-Black.ttf);
     font-display: auto;
 }
-/* * {
-    font-family: 'Nunito', sans-serif;
-} */
+@font-face {
+    font-family: 'FiraSans-Bold';
+    src: url(../font/Fira_Sans/FiraSans-Bold.ttf);
+    font-display: auto;
+}
 
 * {
-    font-family: 'TenorSans-Regular';
+    font-family: 'FiraSans-Light';
     }
 /* Mobile */
 
