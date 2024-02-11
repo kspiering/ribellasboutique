@@ -3,8 +3,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
+
+
 /* Schritftart */
 @font-face {
     font-family: 'FiraSans-Light';
@@ -19,17 +20,18 @@
 
 * {
     font-family: 'FiraSans-Light';
-    }
+}
+
 /* Mobile */
 
 body {
     background: rgb(215, 199, 186, 0.2);
-    font-family: sans-serif;
     width: 100%;
 }
 a {
     text-decoration: none; 
     color: black;
+    font-family: 'FiraSans-Light';
 }
 
 /* Hover Links */
@@ -67,13 +69,13 @@ header {
   }
 
   .burger-icon {
-
     cursor: pointer;
   }
   
   .burger {
     text-align: left;
   }
+  
   .burger-line {
     display: flex;
     flex-direction: column;
@@ -230,6 +232,7 @@ small {
     margin-right: 8%;
     margin-bottom: 8%;
 }
+span { font-family: 'FiraSans-Light';}
  }
 /* Desktop */
 @media (min-width: 650px) { 
@@ -302,7 +305,7 @@ hr {
 .nav-footer ul {
     list-style: none;
     font-size: 22px; 
-    gap: 40px;
+    gap: 30px;
     display: flex;
     flex-direction: column;
     margin-left: 8%;
@@ -325,5 +328,7 @@ small {
     margin-left: 7%;
     margin-right: 8%;
     margin-bottom: 8%;
+    
 }
+span { font-family: 'FiraSans-Light';}
 }

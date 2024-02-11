@@ -135,11 +135,11 @@ button:hover {
     }
     
     h1 {
-        font-weight: bolder;
+        font-family: 'FiraSans-Bold';
         font-size: 35px; }
     
     h2 {
-        font-weight: bolder;
+        font-family: 'FiraSans-Bold';
         font-size: 30px;
         padding-top: 20px;
         margin-bottom: 8rem;

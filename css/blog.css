@@ -18,7 +18,7 @@
     font-display: auto;
 }
 
-p {
+* {
     font-family: 'FiraSans-Light';
     }
 
@@ -51,7 +51,7 @@ p {
         }
         
         h1 {
-            font-weight: bolder;
+            font-family: 'FiraSans-Bold';
             font-size: 20px;
             margin-bottom: 4rem;
          }
@@ -118,7 +118,7 @@ p {
         }
         
         h1 {
-            font-weight: bolder;
+            font-family: 'FiraSans-Bold';
             font-size: 35px;
             margin-bottom: 8rem;
          }
