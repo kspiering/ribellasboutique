@@ -216,5 +216,11 @@ button:hover {
     justify-content: center;
 }
 
-
+.validation {
+    border: 2px solid rgb(38, 209, 38);
+}
+.valid {
+position: absolute;
+right: 550px;
+}
 }

@@ -1,12 +1,13 @@
 document.querySelector("#submit").addEventListener("click", validateForm);
 
-const inputFields = document.querySelectorAll("form input");
+const inputFields = document.querySelectorAll("form input, form select");
 inputFields.forEach((field) => {
   field.addEventListener("mouseout", function (event) {
     event.preventDefault();
     const existingError = field.nextElementSibling;
 
     if (!field.value.trim()) {
+      field.classList.remove("validation");
       field.style.backgroundColor = "pink";
       if (!existingError || !existingError.classList.contains("error")) {
         const errorText = document.createElement("span");
@@ -17,8 +18,13 @@ inputFields.forEach((field) => {
       }
     } else {
       field.style.backgroundColor = "";
+      field.classList.add("validation");
       if (existingError && existingError.classList.contains("error")) {
         existingError.remove();
+        const validText = document.createElement("span");
+        validText.classList.add("valid");
+        validText.innerHTML = "✔️";
+        field.after(validText);
       }
     }
   });
