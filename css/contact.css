@@ -115,6 +115,13 @@ button:hover {
     display: flex;
     justify-content: center;
 }
+.validation {
+    border: 2px solid rgb(38, 209, 38);
+}
+.valid {
+position: absolute;
+right: 8%;
+}
 
 /* Desktop */
 @media (min-width: 700px) {
@@ -221,6 +228,6 @@ button:hover {
 }
 .valid {
 position: absolute;
-right: 550px;
+right: 37%;
 }
 }
