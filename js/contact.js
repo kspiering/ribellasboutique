@@ -27,7 +27,7 @@ inputFields.forEach((field) => {
       validText.innerHTML = "✔️";
       field.after(validText);
       if (existingError && existingError.classList.contains("error")) {
-        console.log("rror check executing");
+        console.log("error check executing");
         existingError.remove();
       }
     }
