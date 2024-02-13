@@ -1,8 +1,10 @@
 document.querySelector("#submit").addEventListener("click", validateForm);
 
-const inputFields = document.querySelectorAll("form input, form select");
+const inputFields = document.querySelectorAll(
+  "form input, form select, form textarea"
+);
 inputFields.forEach((field) => {
-  field.addEventListener("mouseout", function (event) {
+  field.addEventListener("blur", function (event) {
     event.preventDefault();
     const existingError = field.nextElementSibling;
 
@@ -17,14 +19,16 @@ inputFields.forEach((field) => {
         field.after(errorText);
       }
     } else {
+      console.log("else executing");
       field.style.backgroundColor = "";
       field.classList.add("validation");
+      const validText = document.createElement("span");
+      validText.classList.add("valid");
+      validText.innerHTML = "✔️";
+      field.after(validText);
       if (existingError && existingError.classList.contains("error")) {
+        console.log("rror check executing");
         existingError.remove();
-        const validText = document.createElement("span");
-        validText.classList.add("valid");
-        validText.innerHTML = "✔️";
-        field.after(validText);
       }
     }
   });
@@ -197,6 +201,13 @@ function validateForm(event) {
     document.querySelector("#message").value = "";
 
     document.querySelectorAll(".error").forEach((element) => element.remove());
+    document.querySelectorAll(".validation").forEach((element) => {
+      element.classList.remove("validation");
+    });
+
+    document.querySelectorAll(".valid").forEach((element) => {
+      element.remove("valid");
+    });
   }
   if (Object.keys(validationErrors).length > 0) {
     displayError(validationErrors);
