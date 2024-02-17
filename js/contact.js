@@ -209,6 +209,14 @@ function validateForm(event) {
       element.remove("valid");
     });
   }
+  if (validationErrors) {
+    document.querySelectorAll(".validation").forEach((element) => {
+      element.classList.remove("validation");
+    });
+    document.querySelectorAll(".valid").forEach((element) => {
+      element.remove("valid");
+    });
+  }
   if (Object.keys(validationErrors).length > 0) {
     displayError(validationErrors);
   } else {
