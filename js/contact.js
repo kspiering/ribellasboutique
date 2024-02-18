@@ -1,7 +1,7 @@
 document.querySelector("#submit").addEventListener("click", validateForm);
 
 const inputFields = document.querySelectorAll(
-  "form input, form select, form textarea"
+  "#anrede, #first-name, #last-name, #address, #city"
 );
 inputFields.forEach((field) => {
   field.addEventListener("blur", function (event) {
@@ -28,6 +28,139 @@ inputFields.forEach((field) => {
       field.after(validText);
       if (existingError && existingError.classList.contains("error")) {
         console.log("error check executing");
+        existingError.remove();
+      }
+    }
+  });
+});
+
+const inputFieldsEmail = document.querySelectorAll("#email-address");
+
+inputFieldsEmail.forEach((field) => {
+  field.addEventListener("blur", function (event) {
+    event.preventDefault();
+    const errorContainer =
+      field.parentElement.querySelector(".error-container");
+
+    if (!field.value.trim()) {
+      field.classList.remove("validation");
+      field.style.backgroundColor = "pink";
+      if (!errorContainer) {
+        const errorContainer = document.createElement("div");
+        errorContainer.classList.add("error-container");
+        const errorText = document.createElement("span");
+        errorText.classList.add("error");
+        errorText.innerHTML = "Please enter a valid email";
+        errorText.style.color = "red";
+        errorContainer.appendChild(errorText);
+        field.after(errorContainer);
+      }
+    } else {
+      const emailRegExp =
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if (!emailRegExp.test(field.value)) {
+        field.classList.remove("validation");
+        field.style.backgroundColor = "pink";
+        if (!errorContainer) {
+          const errorContainer = document.createElement("div");
+          errorContainer.classList.add("error-container");
+          const errorText = document.createElement("span");
+          errorText.classList.add("error");
+          errorText.innerHTML = "Please enter a valid email";
+          errorText.style.color = "red";
+          errorContainer.appendChild(errorText);
+          field.after(errorContainer);
+        }
+      } else {
+        console.log("else executing");
+        field.style.backgroundColor = "";
+        field.classList.add("validation");
+        if (errorContainer) {
+          errorContainer.remove();
+        }
+      }
+    }
+  });
+});
+
+const inputFieldsMessage = document.querySelectorAll("#message");
+
+inputFieldsMessage.forEach((field) => {
+  field.addEventListener("blur", function (event) {
+    event.preventDefault();
+    const existingError = field.nextElementSibling;
+
+    if (!field.value.trim()) {
+      field.classList.remove("validation");
+      field.style.backgroundColor = "pink";
+      if (!existingError || !existingError.classList.contains("error")) {
+        const errorText = document.createElement("span");
+        errorText.classList.add("error");
+        errorText.innerHTML = "Please enter message (min.20 characters)";
+        errorText.style.color = "red";
+        field.after(errorText);
+      }
+    } else {
+      if (field.value.length < 21) {
+        field.classList.remove("validation");
+        field.style.backgroundColor = "pink";
+      } else {
+        console.log("else executing");
+        field.style.backgroundColor = "";
+        field.classList.add("validation");
+        const validText = document.createElement("span");
+        validText.classList.add("valid");
+        validText.innerHTML = "✔️";
+        field.after(validText);
+        if (existingError && existingError.classList.contains("error")) {
+          console.log("error check executing");
+          existingError.remove();
+        }
+      }
+    }
+  });
+});
+
+const inputField = document.querySelectorAll("#zip-code");
+
+inputField.forEach((field) => {
+  field.addEventListener("blur", function (event) {
+    event.preventDefault();
+    const existingError = field.nextElementSibling;
+
+    if (!field.value.trim()) {
+      field.classList.remove("validation");
+      field.style.backgroundColor = "pink";
+      if (!existingError || !existingError.classList.contains("error")) {
+        const errorText = document.createElement("span");
+        errorText.classList.add("error");
+        errorText.innerHTML = "Please enter a zip code with at least 4 digits";
+        errorText.style.color = "red";
+        field.after(errorText);
+        if (existingError && existingError.classList.contains("error")) {
+          existingError.remove();
+        }
+      }
+    } else if (!/^\d+$/.test(field.value) || field.value.length < 4) {
+      field.classList.remove("validation");
+      field.style.backgroundColor = "pink";
+      const errorText = document.createElement("span");
+      errorText.classList.add("error");
+      errorText.innerHTML = "Please enter a zip code with at least 4 digits";
+      errorText.style.color = "red";
+      field.after(errorText);
+      if (existingError && existingError.classList.contains("error")) {
+        existingError.remove();
+      }
+    } else {
+      field.style.backgroundColor = "";
+      field.classList.add("validation");
+      const validText = document.createElement("span");
+      validText.classList.add("valid");
+      validText.innerHTML = "✔️";
+      field.after(validText);
+
+      if (existingError && existingError.classList.contains("error")) {
         existingError.remove();
       }
     }
@@ -201,6 +334,7 @@ function validateForm(event) {
     document.querySelector("#message").value = "";
 
     document.querySelectorAll(".error").forEach((element) => element.remove());
+
     document.querySelectorAll(".validation").forEach((element) => {
       element.classList.remove("validation");
     });
