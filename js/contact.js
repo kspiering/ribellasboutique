@@ -19,7 +19,6 @@ inputFields.forEach((field) => {
         field.after(errorText);
       }
     } else {
-      console.log("else executing");
       field.style.backgroundColor = "";
       field.classList.add("validation");
       const validText = document.createElement("span");
@@ -27,7 +26,6 @@ inputFields.forEach((field) => {
       validText.innerHTML = "✔️";
       field.after(validText);
       if (existingError && existingError.classList.contains("error")) {
-        console.log("error check executing");
         existingError.remove();
       }
     }
@@ -343,6 +341,7 @@ function validateForm(event) {
       element.remove("valid");
     });
   }
+
   if (validationErrors) {
     document.querySelectorAll(".validation").forEach((element) => {
       element.classList.remove("validation");
