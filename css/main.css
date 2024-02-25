@@ -253,28 +253,28 @@ header {
 .logo {
     display: flex;
     justify-content: center; 
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .logo img {
     width: auto;
-    height: 100px;
+    height: 60px;
 }
-
+/* 
 i { 
     position: absolute;
     right: 8%;
     top: 105px; 
-    font-size: 45px; 
-}
+    font-size: 40px; 
+} */
 
 .nav-header ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none; 
     font-size: 25px;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
 }
 
 
