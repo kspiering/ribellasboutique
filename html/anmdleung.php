@@ -1,3 +1,19 @@
+<?php
+
+$hasError = false;
+
+echo "<pre>POST";
+print_r($_POST);
+echo "</pre>";
+
+// if() {
+//     echo "Vorname existiert";
+// }
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,10 +31,10 @@
     <section class="registrierung">
         <form action="../php/anmelden.php" method="GET">
             <label for="email-adress">Email Address*</label>
-            <input type="email" id="email-address" placeholder="E-mail">
+            <input type="email" id="email-address"  name="email" placeholder="E-mail">
             <br>
             <label for="password">Password*</label>
-            <input type="password" id="password" placeholder="Password">
+            <input type="password" id="password" name="password" placeholder="Password">
             <div class="buttons">
                 <button id="submit">Login</button>
             </div>
