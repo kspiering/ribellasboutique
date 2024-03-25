@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Register</title>
+</head>
+<body>
+
+    <section class="titles">
+        <h1>Login to your account</h1>
+    </section>
+    <section class="registrierung">
+        <form action="../php/anmelden.php" method="GET">
+            <label for="first-name">1. Name*</label>
+            <input type="text" id="first-name" placeholder="First Name">
+            <input type="text" id="last-name" placeholder="Last Name">
+            <br>
+            <label for="email-adress">Email Address*</label>
+            <input type="email" id="email-address" name="email" placeholder="E-mail">
+            <br>
+            <label for="password">Password*</label>
+            <input type="password" id="password" name="password" placeholder="Password">
+            <div class="buttons">
+                <button id="submit">Login</button>
+            </div>
+            <p>Already have an account? <a href="anmelden.html">Login</a></p>
+        </form>
+    </section>
+</body>
+</html>

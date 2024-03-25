@@ -181,7 +181,23 @@ i {
 
 
 /* Footer */
+.buttonUp {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -2rem;
+}
+.button {
+color: rgb(100, 68, 18);
+   font-size: 1.5rem;
+   border: 1px solid rgb(64, 43, 21);
+   border-radius: 50%;
+   transition: transform 0.3s ease;
+}
 
+.button:hover {
+    font-size: 2rem;
+    border: 1px solid rgb(64, 43, 21);
+}
 .footer {
     width: 90vw;
     position: relative;
@@ -254,7 +270,7 @@ header {
     display: flex;
     justify-content: center; 
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .logo img {
@@ -279,6 +295,23 @@ i {
 
 
 /* Footer */
+.buttonUp {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -2.5rem;
+}
+.button {
+color: rgb(100, 68, 18);
+   font-size: 2.5rem;
+   border: 1px solid rgb(64, 43, 21);
+   border-radius: 50%;
+   transition: transform 0.3s ease;
+}
+
+.button:hover {
+    font-size: 3rem;
+    border: 1px solid rgb(64, 43, 21);
+}
 .footer {
      width: 90vw;
     position: relative; 
